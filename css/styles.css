@@ -1,168 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 :root {
-    --ff-one: font-family: 'Inconsolata', monospace;
-    --ff-two: font-family: 'Varela Round', sans-serif;
+  --ff-one: "Inconsolata", monospace;
+  --ff-two: "Varela Round", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
 }
 
 body {
-    background-color: gray;
+  background-color: gray;
 }
 
 /* Styling the navbar */
 
 nav {
-    background-color: black;
+  background-color: black;
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    height: 80px;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 80px;
 }
 .brand-logo {
-    color: white;
+  color: white;
 }
-nav ul li a{
-    text-decoration: none;
-    margin-left: 40px;
-    font-size: 1.3rem;
-    color: grey;
+nav ul li a {
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 1.3rem;
+  color: grey;
 }
-nav ul li a:hover{
-    color: white;
-    transition: color ease-in-out 200ms;
+nav ul li a:hover {
+  color: white;
+  transition: color ease-in-out 200ms;
 }
 
 .brand-logo img {
-    width: 85px;
-    padding: 0px 12px;
+  width: 85px;
+  padding: 0px 12px;
 }
 
 .brand-logo {
-    display: flex;
-    align-items: center;
-    font-family: var(--ff-one);
-    font-weight: 600;
-    font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-family: var(--ff-one);
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 /* Adding background */
 .background {
-    min-height: 80vh;
-    width: 80%;
-    border-radius: 12px;
-    margin: auto;
-    background-image: url("/images/bgImg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    font-family: var(--ff-two);
+  min-height: 80vh;
+  width: 80%;
+  border-radius: 12px;
+  margin: auto;
+  background-image: url("/images/bgImg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: var(--ff-two);
 }
 
 /* Styling the songs list */
 .song-list {
-    /* border: 2px solid white; */
-    max-width: 800px;
-    max-height: 750px;
-    min-height: 200px;
-    margin: 12px 0px 0px 40px;
-    padding: 12px 0px 0px 12px;
-    display: block;
+  /* border: 2px solid white; */
+  max-width: 800px;
+  max-height: 750px;
+  min-height: 200px;
+  margin: 12px 0px 0px 40px;
+  padding: 12px 0px 0px 12px;
+  display: block;
 }
 
 /* Styling bottom */
 .bottom {
-    position: sticky;
-    background-color: rgb(32, 32, 32);
-    height: 100px;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  position: sticky;
+  background-color: rgb(32, 32, 32);
+  height: 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #progress-bar {
-    min-width: 50vw;
-    cursor: pointer;
-    transition: all 0.8ms;
+  min-width: 50vw;
+  cursor: pointer;
+  transition: all 0.8ms;
 }
 
 .icons img {
-    max-width: 25px;
-    margin-top: 12px;
+  max-width: 25px;
+  margin-top: 12px;
 }
 .icons img:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .playBtn {
-    margin-right: 10px;
-    margin-left: 10px;
-    width: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 30px;
 }
 
 /* Styling song items */
 
 .song-items-container {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .song-items {
-    display: flex;
-    min-height: 50px;
-    background-color: white;
-    width: 58%;
-    margin: 12px 0px;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
+  display: flex;
+  min-height: 50px;
+  background-color: white;
+  width: 58%;
+  margin: 12px 0px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
 }
 
 .song-items img {
-    width: 45px;
-    border-radius: 50%;
-    margin: 0 12px;
+  width: 45px;
+  border-radius: 50%;
+  margin: 0 12px;
 }
 
 .song-items span {
-    color: black;
+  color: black;
 }
 
 .song-items .playBtn {
-    width: 22px;
-    margin: 0 4px 0 0;
-    padding: 0 4px;
+  width: 22px;
+  margin: 0 4px 0 0;
+  padding: 0 4px;
 }
 
 .timestamp img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Styling song info */
 .song-info {
-    position: absolute;
-    transform-origin: center;
-    top: 10vh;
-    left: 50%;
-    transform: translate(-50%);
-    font-family: var(--ff-two);
+  position: absolute;
+  transform-origin: center;
+  top: 10vh;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: var(--ff-two);
 }
 
 /* Utility classes */
 .active {
-    color: white;
+  color: white;
 }
 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
