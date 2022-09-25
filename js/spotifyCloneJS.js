@@ -140,6 +140,7 @@ document.getElementById("prev").addEventListener("click", () => {
     "white";
 
   playSongs[songIndex].src = "./images/play.png";
+  songText.textContent = mySongs[songIndex].songName;
   masterPlay.src = "./images/play.png";
 });
 
@@ -167,6 +168,7 @@ document.getElementById("next").addEventListener("click", () => {
     "white";
 
   playSongs[songIndex].src = "./images/play.png";
+  songText.textContent = mySongs[songIndex].songName;
   masterPlay.src = "./images/play.png";
 });
 
