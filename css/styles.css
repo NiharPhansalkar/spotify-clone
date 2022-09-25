@@ -62,7 +62,7 @@ nav ul li a:hover {
   width: 80%;
   border-radius: 12px;
   margin: auto;
-  background-image: url("/images/bgImg.jpg");
+  background-image: url("../images/bgImg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
