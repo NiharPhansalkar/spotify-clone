@@ -193,11 +193,46 @@ audioElement.addEventListener("timeupdate", () => {
   progressBar.value = parseFloat(
     (audioElement.currentTime / audioElement.duration) * 100
   );
+
+  
+  if (Number(progressBar.value) === 100) {
+    console.log("Hello");
+    autoPlay();
+  }
 });
 
 // If bar progress is changed by a click/drag, then change the song accordingly.
 progressBar.addEventListener("click", () => {
-  // Below equation is derived from line 79
+  // Below equation is derived from line 194
   audioElement.currentTime =
     (parseInt(progressBar.value) * audioElement.duration) / 100;
 });
+
+// Autoplay feature
+
+function autoPlay() {
+  songItems[songIndex].style.backgroundColor = "white";
+  songItems[songIndex].getElementsByClassName("songName")[0].style.color =
+    "black";
+  songItems[songIndex].getElementsByClassName("timestamp")[0].style.color =
+    "black";
+
+  if (songIndex < 10) {
+    songIndex += 1;
+  } else {
+    songIndex = 0;
+  }
+  audioElement.src = mySongs[songIndex].soundPath;
+  audioElement.play();
+  makeAllPause();
+
+  songItems[songIndex].style.backgroundColor = "#118845";
+  songItems[songIndex].getElementsByClassName("songName")[0].style.color =
+    "white";
+  songItems[songIndex].getElementsByClassName("timestamp")[0].style.color =
+    "white";
+
+  playSongs[songIndex].src = "./images/play.png";
+  songText.textContent = mySongs[songIndex].songName;
+  masterPlay.src = "./images/play.png";
+}
